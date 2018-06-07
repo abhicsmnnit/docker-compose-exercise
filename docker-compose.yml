@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  product-service: 
+  # Here goes the compose config for Product API Service
+
+  webpro-panel:
+  # And here you can configure the WebPro Panel
