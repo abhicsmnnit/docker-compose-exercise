@@ -21,7 +21,7 @@ Well... If you were awake in the first Docker Session, then it's pretty simple. 
 But... :point_up: if you were sleeping :sleeping: (and we know you were!), and therefore not sure how to go about doing this, we would suggest you go through these docs to get to know Docker Compose:
 - [Meet Docker Compose](https://docs.docker.com/compose/overview/) :whale:
 - [Install Docker Compose](https://docs.docker.com/compose/install/) :arrow_down: :whale:
-- [And get your hands dirty!](https://docs.docker.com/compose/gettingstarted/) :open_hands: :whale: *(Hint: This page has solutions to all your problems! :wink:)*
+- [And get your hands dirty!](https://docs.docker.com/compose/gettingstarted/) :open_hands: :whale: *(Hint: This page has solutions to all your problems!* :wink:*)*
 
 ## A Word On The Services
 You have 2 services right now:
@@ -35,10 +35,10 @@ However, **to complete this challenge you don't need to know either Python or PH
 And to relieve you even more, we have gone ahead and dockerized Product API Service for you already! :innocent:
 
 And for the WebPro Panel Service, we can tell you that you need to:
-- Use an image named [```php:5.6.36-apache```](https://hub.docker.com/_/php/)
-- And, copy the php file in the ```/var/www/html``` directory of your container
+- Use an image named [```php:5.6.36-apache```](https://hub.docker.com/_/php/).
+- And, copy the php file in the ```/var/www/html``` directory of your container.
 
-**You just need to fill the ```docker-compose.yml``` file**, and say that magic incantation:
+**Then you just need to fill the ```docker-compose.yml``` file**, and say that magic incantation:
 ```
 docker-compose up
 ```
@@ -57,4 +57,4 @@ Right now, the 2 services are not communicating with each other. But what fun wi
 ## What If I Still Can't Do It?
 No problem! You can talk to any one of us: Birju.s, Rajeev.s, Supriya.m, Sudheer.m, Prasad.p, Arnav.c, or Abhinav.ve.
 
-And if you are too shy to do even that, we'll anyway show you how to do this (and much more! :sunglasses:) in our next Docker Session. So stay tuned! :simple_smile:
+And if you are too shy to do even that, we'll anyway show you how to do this (and much more! :sunglasses:) in our next Docker Session. So stay tuned! :smiley:
