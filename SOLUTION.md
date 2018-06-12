@@ -26,6 +26,13 @@ You *just* need to run this simple command, and you are up and running with your
 
 Compare this to your workflow now, and you'll definitely be convinced that Docker is indeed Awesome! :relaxed:
 
+## How to Know If It Worked?
+Open these two URLs in your browser, and you'll know if it worked or not:
+* http://localhost:8080 (For ProductService)
+* http://localhost:8888 (For WebProPanel)
+
+(You could have exposed the services on any other ports also.)
+
 ## But the Services Don't Talk To Each Other Right Now 🤔
 This will be covered in the next session. So, just **Keep Calm & Play Around with Docker!**
 
