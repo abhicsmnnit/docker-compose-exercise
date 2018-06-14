@@ -34,6 +34,11 @@ Open these two URLs in your browser, and you'll know if it worked or not:
 (You could have exposed the services on any other ports also.)
 
 ## But the Services Don't Talk To Each Other Right Now 🤔
-This will be covered in the next session. So, just **Keep Calm & Play Around with Docker!**
+This will be covered in the next session.
+
+Therefore the ```depends_on``` property in the ```docker-compose.yml``` file can be ignored for now.
+This will come in handy when we'll make the services talk as the WebProPanel service will be using ProductService.
+
+So, for now just **Keep Calm & Play Around with Docker!**
 
 See you in the session. :smiley:
