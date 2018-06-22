@@ -8,8 +8,17 @@
 </head>
 <body>
     <h1>Welcome to the Brand New WebPro Panel!</h1>
-    <?php
-        echo "<h3>We'll integrate soon with the Product Service to give you an awesome experience :)</h3>";
-    ?>
+    <h3>Here are the products we offer:</h3>
+    <ul>
+      <?php
+        $json = file_get_contents('');
+        $obj = json_decode($json);
+
+        $products = $obj->products;
+        foreach ($products as $product) {
+          echo "<li>$product</li>";
+        }
+      ?>
+    </ul>
 </body>
 </html>
