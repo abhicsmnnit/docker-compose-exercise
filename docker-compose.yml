@@ -2,17 +2,39 @@ version: '3'
 
 services:
   product-service:
-    build: ./ProductService
-    volumes:
-      - ./ProductService:/usr/src/app
-    ports:
-      - 8080:80
-    
-  webpro-panel:
-    image: php:5.6.36-apache
-    volumes:
-      - ./WebProPanel:/var/www/html
+    image: abhicsmnnit/product-api-service:latest
+    deploy:
+      replicas: 5
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 50M
+      restart_policy:
+        condition: on-failure
     ports:
       - 8888:80
+
+  webpro-panel:
+    image: php:5.6.36-apache
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 50M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - 8889:80
     depends_on:
       - product-service
+
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
